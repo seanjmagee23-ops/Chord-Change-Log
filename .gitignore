@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Database (contains your personal data — keep off GitHub)
+backend/practice_log.db
+
+# Build output
+frontend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables (if you add any secrets later)
+.env
+.env.local
