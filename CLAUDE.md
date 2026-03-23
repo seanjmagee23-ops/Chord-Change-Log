@@ -18,6 +18,30 @@ cd frontend && npm run dev    # Vite on :5173
 
 There are no tests or linting configured in this project.
 
+## Git Workflow
+
+After every meaningful change, commit and push to GitHub immediately. Never leave commits local-only.
+
+```bash
+git add [specific files]
+git commit -m "short description of what changed and why"
+git push
+```
+
+**Commit message conventions used in this project:**
+- `Add ...` — new file or feature added
+- `Fix ...` — bug fix
+- `Update ...` — change to existing functionality
+- `Remove ...` — deletion of something
+
+**What warrants a commit:**
+- Any completed feature or UI change
+- Any bug fix
+- Any update to CLAUDE.md or README.md
+- Any dependency or config change
+
+**Keep CLAUDE.md up to date** — any time the architecture changes, a new gotcha is discovered, a new workflow is established, or a new convention is agreed on with the user, update this file and commit it alongside the related changes.
+
 ## Architecture
 
 This is a monorepo with two independent Node.js projects — `backend/` and `frontend/` — started together via `concurrently` from the root `package.json`.
